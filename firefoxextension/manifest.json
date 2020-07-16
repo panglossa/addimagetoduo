@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Add Image to Duolingo",
+  "version": "1.0",
+
+  "description": "Adds an image to Duolingo sentence pages.",
+
+  "icons": {
+    "48": "icons/addimagetoduo-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.duolingo.com/*"],
+      "js": ["addimagetoduo.js"]
+    }
+  ]
+
+}
